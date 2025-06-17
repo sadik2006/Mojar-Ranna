@@ -1,0 +1,152 @@
+<!DOCTYPE html><html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>মজার রান্না - অনলাইন ফুড অর্ডার</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fff8e1;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff7043;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #ffe0b2;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #e65100;
+            font-weight: bold;
+        }
+        .hero {
+            background-image: url('food-banner.jpg');
+            background-size: cover;
+            color: black;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+        .product {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .order-section {
+            padding: 30px;
+            background-color: #fff3e0;
+            text-align: center;
+        }
+        .order-section h2 {
+            color: #bf360c;
+        }
+        .order-section form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .order-section input, .order-section select, .order-section button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+        .payment-info {
+            background-color: #ffe082;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            color: #4e342e;
+        }
+        footer {
+            background-color: #ff7043;
+            color: black;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>মজার রান্না</h1>
+        <p>স্বাদে ভরা ঘরে তৈরি খাবার এখন ঘরে বসেই অর্ডার করুন!</p>
+    </header>
+    <nav>
+        <a href="#">হোম</a>
+        <a href="#foods">খাবার সমূহ</a>
+        <a href="#order">অর্ডার করুন</a>
+        <a href="#payment">পেমেন্ট</a>
+        <a href="#contact">যোগাযোগ</a>
+    </nav>
+    <div class="hero">
+        <h1>অনলাইন অর্ডার করুন</h1>
+        <p>বিকাশ, নগদ, রকেট-এর মাধ্যমে পেমেন্ট করে খাবার পৌঁছে দিন আপনার দরজায়।</p>
+    </div><section id="foods" class="products">
+    <div class="product">
+        <img src="Beriyani.jpg" alt="বিরিয়ানি">
+        <h3>হাঁসের বিরিয়ানি</h3>
+        <p>মূল্য: ২২০৳</p>
+    </div>
+    <div class="product">
+        <img src="pulao.jpg" alt="পোলাও">
+        <h3>চিকেন পোলাও</h3>
+        <p>মূল্য: ১৮০৳</p>
+    </div>
+    <div class="product">
+        <img src="snacks.jpg" alt="স্ন্যাকস">
+        <h3>মুচমুচে স্ন্যাকস</h3>
+        <p>মূল্য: ১০০৳</p>
+    </div>
+</section>
+
+<section id="order" class="order-section">
+    <h2>খাবার অর্ডার করুন</h2>
+    <form>
+        <input type="text" placeholder="আপনার নাম" required>
+        <input type="text" placeholder="ঠিকানা" required>
+        <input type="tel" placeholder="মোবাইল নাম্বার" required>
+        <select>
+            <option>হাঁসের বিরিয়ানি</option>
+            <option>চিকেন পোলাও</option>
+            <option>মুচমুচে স্ন্যাকস</option>
+        </select>
+        <input type="number" placeholder="পরিমাণ" required>
+        <button type="submit">অর্ডার করুন</button>
+    </form>
+</section>
+
+<section id="payment" class="payment-info">
+    <h2>পেমেন্ট তথ্য</h2>
+    <p><strong>বিকাশ/নগদ/রকেট নাম্বার:</strong> 01852565356</p>
+    <p>পেমেন্ট করার পর স্ক্রিনশট বা ট্রান্স্যাকশন আইডি দিন আমাদের WhatsApp/ফর্মে</p>
+</section>
+
+<footer>
+    <p>&copy; ২০২৫ মজার রান্না. সর্বস্বত্ব সংরক্ষিত।</p>
+</footer>
+
+</body>
+</html>
